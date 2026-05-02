@@ -1,6 +1,9 @@
 [build-system]
-requires = ["setuptools>=77.0.3"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "novelwriter/__init__.py"
 
 [project]
 name = "novelWriter"
@@ -28,6 +31,7 @@ dependencies = [
     "pyqt6>=6.4",
     "pyenchant>=3.3.0",
     "pyobjc; sys_platform == 'darwin'",
+    "pyinstaller>=6.19.0",
 ]
 
 [dependency-groups]

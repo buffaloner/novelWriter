@@ -69,3 +69,9 @@ ToC.txt
 # IDE
 .vscode
 .ruff_cache
+.env
+NOTES.md
+tmp/
+!tmp/contexts/
+!novelwriter.spec
+pyrightconfig.json
