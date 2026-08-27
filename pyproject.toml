@@ -1,6 +1,9 @@
 [build-system]
-requires = ["setuptools>=77.0.3"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "novelwriter/__init__.py"
 
 [project]
 name = "novelWriter"
@@ -36,6 +39,7 @@ dev = [
     { include-group = "docs" },
     { include-group = "test" },
     { include-group = "lint" },
+    "pyinstaller>=6.22.2",
 ]
 build = ["build", "setuptools>=77.0.3"]
 docs = [
